@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My One-Page Website</title>
+    <style>
+      /* Add your CSS styles here */
+      
+    </style>
+  </head>
+  <body>
+    <!-- Add your HTML content here -->
+    <header>
+      <h1>My Site ChatGpt</h1>
+    </header>
+    <nav>
+  <ul>
+    <li><a href="#section1">Section 1</a></li>
+    <li><a href="#section2">Section 2</a></li>
+    <!-- Add more navigation links as needed -->
+  </ul>
+</nav>
+
+<main>
+  <section id="section1" hidden>
+    <h2>Section 1</h2>
+    <div>
+      Приведенный выше код написан на JavaScript и содержит единственную функцию "showSection" и цикл, который добавляет прослушиватели событий к ссылкам навигации.
+
+    Функция показывает раздел:
+
+    Он принимает объект события в качестве аргумента.
+    Первая строка функции вызывает метод preventDefault для объекта event, чтобы предотвратить поведение ссылки по умолчанию при нажатии.
+    Следующая строка использует целевое свойство объекта события, чтобы получить элемент привязки, по которому был произведен щелчок.
+    Затем метод getAttribute вызывается для элемента привязки, чтобы получить его атрибут "href".
+    Значение атрибута "href" используется для выбора элемента раздела с тем же идентификатором с помощью метода querySelector.
+    Затем стиль отображения выбранного раздела устанавливается на "блокировать".
+
+    Петля:
+
+    Метод querySelectorAll используется для выбора всех навигационных ссылок в элементе "nav".
+    Цикл повторяет все ссылки и добавляет прослушиватель событий к каждой из них.
+    Прослушиватель событий прослушивает событие "щелчок" и вызывает функцию "showSection" при нажатии на ссылку
+    </div>
+  </section>
+  <section id="section2" hidden>
+    <h2>Section 2</h2>
+    <div>
+       Add content for Section 2 
+    </div>
+  </section>
+  <!-- Add more sections as needed -->
+</main>
+
+
+
+
+
+
+    <footer>
+      <!-- Add footer content -->
+    </footer>
+  </body>
+  <script>
+  function showSection(event) {
+  event.preventDefault();
+  let sectionId = event.target.getAttribute("href");
+  let section = document.querySelector(sectionId);
+  if (section.style.display === "block") {
+    section.style.display = "none";
+  } else {
+    section.style.display = "block";
+  }
+}
+
+let links = document.querySelectorAll("nav a");
+for (let i = 0; i < links.length; i++) {
+  links[i].addEventListener("click", showSection);
+}
+
+</script>
+
+</html>
+
