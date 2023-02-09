@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <style>
+      /* Add your CSS styles here */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 1em;
+        text-align: center;
+      }
+      header h1 {
+        margin: 0;
+      }
+      #todo-list {
+        padding: 1em;
+      }
+      /* Add media queries for responsiveness */
+    </style>
+  </head>
+  <body>
+    <!-- Add your HTML content here -->
+    <header>
+      <h1>To-Do List</h1>
+    </header>
+    <div id="todo-list">
+        <form class="todo-form">
+            <input class="todo-input" type="text" placeholder="Add a to-do">
+            <button type="submit">Add</button>
+          </form>
+          
+          <ul class="todo-list"></ul>
+          <ul class="completed-list"></ul>
+          
+    </div>
+    <footer>
+      <!-- Add footer content -->
+    </footer>
+  </body>
+  <script>
+    // Add JavaScript for the to-do list application
+    const toDoForm = document.querySelector('.todo-form');
+const toDoInput = document.querySelector('.todo-input');
+const toDoList = document.querySelector('.todo-list');
+const completedList = document.querySelector('.completed-list');
+
+toDoForm.addEventListener('submit', addToDo);
+
+function addToDo(event) {
+  event.preventDefault();
+  const toDo = toDoInput.value;
+  if (!toDo) return;
+
+  const toDoItem = document.createElement('li');
+  toDoItem.innerHTML = `
+    ${toDo}
+    <button class="complete-button">Complete</button>
+  `;
+  toDoList.appendChild(toDoItem);
+
+  toDoItem.querySelector('.complete-button').addEventListener('click', completeToDo);
+  toDoInput.value = '';
+}
+
+function completeToDo() {
+  const completedItem = this.parentElement;
+  completedItem.innerHTML = `
+    ${completedItem.textContent}
+    <button class="delete-button">Delete</button>
+  `;
+  completedList.appendChild(completedItem);
+
+  completedItem.querySelector('.delete-button').addEventListener('click', deleteToDo);
+}
+
+function deleteToDo() {
+  this.parentElement.remove();
+}
+
+  </script>
+</html>

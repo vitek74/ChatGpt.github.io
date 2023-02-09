@@ -13,36 +13,49 @@
   <body>
     <!-- Add your HTML content here -->
     <header>
-      <h1>My Site ChatGpt</h1>
+      <div>
+        <h2>Кодируйте со страстью, программируйте с целью</h2>
+      </div>
+      <div id="timer">
+        <p>Time remaining until 25th: <span id="countdown"></span></p>
+      </div>
+      <div id="clock">
+        <p>Current time: <span id="time"></span></p>
+      </div>
+      <form>
+        <select>
+          <option value="https://www.yandex.ru/search/?text=">Yandex</option>
+          <option value="https://www.google.com/search?q=">Google</option>
+          <option value="https://www.baidu.com/s?wd=">Baidu</option>
+          <option value="https://www.dogpile.com/search/web?q=">Dogpile</option>
+          <option value="https://duckduckgo.com/?q=">DuckDuckGo</option>
+          <option value="https://www.yacy.net/search?query=">YaCy</option>
+        </select>
+        <input type="text" name="searchTerm">
+        <input type="submit" value="Search">
+      </form>
     </header>
     <nav>
   <ul>
-    <li><a href="#section1">Section 1</a></li>
+    <li><a href="#section1">Сайты</a></li>
     <li><a href="#section2">Section 2</a></li>
+    <li><a href="#section3">Section 3</a></li>
+   
     <!-- Add more navigation links as needed -->
   </ul>
 </nav>
 
 <main>
   <section id="section1" hidden>
-    <h2>Section 1</h2>
+    <h2>Сайты</h2>
     <div>
-      Приведенный выше код написан на JavaScript и содержит единственную функцию "showSection" и цикл, который добавляет прослушиватели событий к ссылкам навигации.
-
-    Функция показывает раздел:
-
-    Он принимает объект события в качестве аргумента.
-    Первая строка функции вызывает метод preventDefault для объекта event, чтобы предотвратить поведение ссылки по умолчанию при нажатии.
-    Следующая строка использует целевое свойство объекта события, чтобы получить элемент привязки, по которому был произведен щелчок.
-    Затем метод getAttribute вызывается для элемента привязки, чтобы получить его атрибут "href".
-    Значение атрибута "href" используется для выбора элемента раздела с тем же идентификатором с помощью метода querySelector.
-    Затем стиль отображения выбранного раздела устанавливается на "блокировать".
-
-    Петля:
-
-    Метод querySelectorAll используется для выбора всех навигационных ссылок в элементе "nav".
-    Цикл повторяет все ссылки и добавляет прослушиватель событий к каждой из них.
-    Прослушиватель событий прослушивает событие "щелчок" и вызывает функцию "showSection" при нажатии на ссылку
+      <ol>
+        <li><a href="https://www.google.com">Google</a></li>
+        <li><a href="https://www.facebook.com">Facebook</a></li>
+        <li><a href="https://www.amazon.com">Amazon</a></li>
+        <li><a href="https://www.apple.com">Apple</a></li>
+      </ol>
+       
     </div>
   </section>
   <section id="section2" hidden>
@@ -51,6 +64,18 @@
        Add content for Section 2 
     </div>
   </section>
+  <section id="section3" hidden>
+    <h2>Section 3</h2>
+    <div>
+       Add content for Section 3 
+    </div>
+  </section>
+
+
+  
+  
+
+  
   <!-- Add more sections as needed -->
 </main>
 
@@ -80,6 +105,33 @@ for (let i = 0; i < links.length; i++) {
   links[i].addEventListener("click", showSection);
 }
 
+</script>
+
+<script>
+  // Get the current date
+  const now = new Date();
+
+  // Get the date of the 25th of the current month
+  const targetDate = new Date(now.getFullYear(), now.getMonth(), 25);
+
+  // Calculate the difference between the target date and the current date
+  const diff = targetDate - now;
+
+  // Convert the difference to days
+  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+
+  // Update the countdown timer on the page
+  document.getElementById("countdown").innerHTML = days + " days";
+
+  // Function to display the current time
+  function displayTime() {
+    const date = new Date();
+    const time = date.toLocaleTimeString();
+    document.getElementById("time").innerHTML = time;
+  }
+
+  // Call the displayTime function every 1 second
+  setInterval(displayTime, 1000);
 </script>
 
 </html>
