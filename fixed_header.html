@@ -1,0 +1,38 @@
+<!--Вот пример того, как создать липкий заголовок с помощью JavaScript:-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <header id="header">Header</header>
+  <div style="padding: 100px;">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget nunc vitae tellus luctus ullamcorper. Nam porttitor ullamcorper felis at convallis. Aenean ornare vestibulum nisi fringilla lacinia. Nullam pulvinar dolor vitae quam dictum condimentum. Integer ante arcu, accumsan auctor vulputate non, porttitor non quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget nunc vitae tellus luctus ullamcorper. Nam porttitor ullamcorper felis at convallis. Aenean ornare vestibulum nisi fringilla lacinia. Nullam pulvinar dolor vitae quam dictum condimentum. Integer ante arcu, accumsan auctor vulputate non, porttitor non quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget nunc vitae tellus luctus ullamcorper. Nam porttitor ullamcorper felis at convallis. Aenean ornare vestibulum nisi fringilla lacinia. Nullam pulvinar dolor vitae quam dictum condimentum. Integer ante arcu, accumsan auctor vulputate non, porttitor non quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </div>
+  <script>
+    window.onscroll = function() {
+      var header = document.getElementById("header");
+      if (window.pageYOffset > header.offsetTop) {
+        header.style.position = "fixed";
+        header.style.top = "0";
+      } else {
+        header.style.position = "relative";
+        header.style.top = "";
+      }
+    };
+  </script>
+</body>
+</html>

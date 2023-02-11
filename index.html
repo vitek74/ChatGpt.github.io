@@ -1,109 +1,180 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>My One-Page Website</title>
-    <style>
-      /* Add your CSS styles here */
-      
-    </style>
-  </head>
-  <body>
-    <!-- Add your HTML content here -->
-    <header>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>My One-Page Website</title>
+  <style>
+    /* Add your CSS styles here */
+  </style>
+</head>
+
+<body>
+  <!-- Add your HTML content here -->
+
+  <header>
+    <div>
+      <h2>Кодируйте со страстью, программируйте с целью</h2>
+    </div>
+    <div id="timer">
+      <p>Time remaining until 25th: <span id="countdown"></span></p>
+    </div>
+    <div id="clock">
+      <p>Current time: <span id="time"></span></p>
+    </div>
+    <form>
+      <select>
+        <option value="https://www.yandex.ru/search/?text=">Yandex</option>
+        <option value="https://www.google.com/search?q=">Google</option>
+        <option value="https://www.baidu.com/s?wd=">Baidu</option>
+        <option value="https://www.dogpile.com/search/web?q=">Dogpile</option>
+        <option value="https://duckduckgo.com/?q=">DuckDuckGo</option>
+        <option value="https://www.yacy.net/search?query=">YaCy</option>
+      </select>
+      <input type="text" name="searchTerm">
+      <input type="submit" value="Search">
+    </form>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#section1">Мое цифровое пространство</a></li>
+      <li><a href="#section2">Сайты</a></li>
+      <li><a href="#section3">Хабы-Хабра</a></li>
+      <li><a href="#section4">Рецепты</a></li>
+
+      <!-- Add more navigation links as needed -->
+    </ul>
+  </nav>
+
+
+  <main>
+    <section id="section1" hidden>
+      <h2>Мое цифровое пространство</h2>
       <div>
-        <h2>Кодируйте со страстью, программируйте с целью</h2>
-      </div>
-      <div id="timer">
-        <p>Time remaining until 25th: <span id="countdown"></span></p>
-      </div>
-      <div id="clock">
-        <p>Current time: <span id="time"></span></p>
-      </div>
-      <form>
-        <select>
-          <option value="https://www.yandex.ru/search/?text=">Yandex</option>
-          <option value="https://www.google.com/search?q=">Google</option>
-          <option value="https://www.baidu.com/s?wd=">Baidu</option>
-          <option value="https://www.dogpile.com/search/web?q=">Dogpile</option>
-          <option value="https://duckduckgo.com/?q=">DuckDuckGo</option>
-          <option value="https://www.yacy.net/search?query=">YaCy</option>
-        </select>
-        <input type="text" name="searchTerm">
-        <input type="submit" value="Search">
-      </form>
-    </header>
-    <nav>
-  <ul>
-    <li><a href="#section1">Мое цифровое пространство</a></li>
-    <li><a href="#section2">Сайты</a></li>
-    <li><a href="#section3">Рецепты</a></li>
-   
-    <!-- Add more navigation links as needed -->
-  </ul>
-</nav>
+        <ol>
+          <li><a href="https://disk.yandex.ru/client/disk" target="_blank" title="Яндекс диск">&#9885;Яндекс Диск</a></li>
+          <li><a
+              href="https://e.mail.ru/messages/inbox/?authid=kwc5pwdn.p7s&back=1%2C1&dwhsplit=s10273.b1ss12743s&from=login&x-login-auth=1&afterReload=1"
+              target="_blank" title="Почта">&#9885;Почта</a></li>
+          <li><a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" title="GMail">&#9885;Google
+              почта</a></li>
+          <li><a href="https://lk.itnet33.ru/" target="_blank" title="Итнет">&#9885;Итнет</a></li>
+          <li> <a href="https://cctvf.itnet33.ru/vsaas/v2/cameras" target="_blank" title="web УКХ 2">&#9885;WEB
+              Камера</a></li>
+          <li><a href="https://ok.ru/feed" target="_blank" title="Однокласники">&#9885;OK</a></li>
+          <li><a href="https://vk.com/al_feed.php" target="_blank" title="ВКонтакт">&#9885;VK</a></li>
+          <li><a href="https://www.youtube.com/" target="_blank" title="Youtube">&#9885;Youtube</a>
+          </li>
+          <li><a href="https://www.amazonforum.com/s/topic/0TO4P000000t6euWAA/kindle-paperwhite"
+            target="_blank">&#9885;Amazon</a></li>
+        </ol>
 
-<main>
-  <section id="section1" hidden>
-    <h2>Сайты</h2>
-    <div>
+      </div>
+    </section>
+
+
+    <section id="section2" hidden>
+      <h2>Сайты</h2>
+      <div>
       <ol>
-        <li><a href="https://www.google.com">Google</a></li>
-        <li><a href="https://www.facebook.com">Facebook</a></li>
-        <li><a href="https://www.amazon.com">Amazon</a></li>
-        <li><a href="https://www.apple.com">Apple</a></li>
+        <li><a href="https://www.yaplakal.com/forum/" target="_blank">&#9885;ЯПлакалъ</a></li>
+        <li><a href="https://rutracker.org/forum/index.php" target="_blank">&#9885;RuTracker</a></li>
+        <li><a href="https://habr.com/ru/all/" target="_blank">&#9885;Habr</a></li>
+        <li><a href="https://github.com/" target="_blank">&#9885;GitHub</a></li>
+        <li><a href="https://www.linux.org.ru/" target="_blank">&#9885;Linux.org</a></li>
+        <li><a href="https://4pda.to/forum/index.php?act=idx" target="_blank">&#9885;4pda</a></li>
+        <li><a href="https://pikabu.ru/community/books" target="_blank">&#9885;Пикабу</a></li>
+        <li><a href="https://www.reddit.com/subreddits/leaderboard/learning/"
+          target="_blank">&#9885;Reddit</a></li>
       </ol>
-       
-    </div>
-  </section>
-  <section id="section2" hidden>
-    <h2>Section 2</h2>
-    <div>
-       Add content for Section 2 
-    </div>
-  </section>
-  <section id="section3" hidden>
-    <h2>Section 3</h2>
-    <div>
-       Add content for Section 3 
-    </div>
-  </section>
+      </div>
+    </section>
+
+    <section id="section3" hidden>
+      <h2>Хабы-Хабра</h2>
+      <div>
+        <ol>
+          <li><a href="https://habr.com/ru/hub/webdev/" target="_blank" class="men">&#9885;
+            Разработка
+            веб-сайтов </a></li>
+          <li><a href="https://habr.com/ru/hub/html5/" target="_blank" class="men">&#9885; HTML</a></li>
+          <li><a href="https://habr.com/ru/hub/css/" target="_blank" class="men">&#9885; CSS</a></li>
+          <li><a href="https://habr.com/ru/hub/linux/" target="_blank" class="men">&#9885;
+            Настройка
+            Linux</a></li>
+          <li><a href="https://habr.com/ru/hub/vs/" target="_blank" class="men">&#9885; Visual
+            Studio</a></li>
+          <li><a href="https://habr.com/ru/hub/javascript/" target="_blank" class="men">&#9885;
+            JavaScript</a></li>
+          <li><a href="https://habr.com/ru/hub/web_design/" target="_blank" class="men">&#9885;
+            Веб-дизайн</a></li>
+          <li><a href="https://habr.com/ru/hub/cellular/" target="_blank" class="men">&#9885;
+            Сотовая
+            связь</a></li>
+          <li><a href="https://habr.com/ru/hub/lifehacks/" target="_blank" class="men">&#9885;
+            Лайфхаки></a></li>
+          <li><a href="https://habr.com/ru/hub/lib/" target="_blank" class="men">&#9885;
+            Профессиональная
+            литература</a></li>
+          <li><a href="https://habr.com/ru/hub/DIY/" target="_blank" class="men">&#9885; DIY
+            или Сделай
+            сам</a></li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="section4" hidden>
+      <h2>Рецепты</h2>
+      <div>
+        Хабы-Хабра
+      </div>
+    </section>
 
 
-  
-  
-
-  
-  <!-- Add more sections as needed -->
-</main>
 
 
 
 
+    <!-- Add more sections as needed -->
+  </main>
 
 
-    <footer>
-      <!-- Add footer content -->
-    </footer>
-  </body>
-  <script>
-  function showSection(event) {
-  event.preventDefault();
-  let sectionId = event.target.getAttribute("href");
-  let section = document.querySelector(sectionId);
-  if (section.style.display === "block") {
-    section.style.display = "none";
-  } else {
-    section.style.display = "block";
+
+
+
+
+  <footer>
+    <!-- Add footer content -->
+  </footer>
+</body>
+
+<script>
+  function scrollToSection(event) {
+    event.preventDefault();
+    let sectionId = event.target.getAttribute("href");
+    let section = document.querySelector(sectionId);
+    section.scrollIntoView({ behavior: "smooth" });
   }
-}
+</script>
 
-let links = document.querySelectorAll("nav a");
-for (let i = 0; i < links.length; i++) {
-  links[i].addEventListener("click", showSection);
-}
+<script>
+  function showSection(event) {
+    event.preventDefault();
+    let sectionId = event.target.getAttribute("href");
+    let section = document.querySelector(sectionId);
+    if (section.style.display === "block") {
+      section.style.display = "none";
+    } else {
+      section.style.display = "block";
+    }
+  }
+
+  let links = document.querySelectorAll("nav a");
+  for (let i = 0; i < links.length; i++) {
+    links[i].addEventListener("click", showSection);
+  }
 
 </script>
 
@@ -135,4 +206,3 @@ for (let i = 0; i < links.length; i++) {
 </script>
 
 </html>
-
