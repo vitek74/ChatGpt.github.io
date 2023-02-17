@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8" lang="ru">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>My One-Page Website</title>
+  <link rel="stylesheet" href="Style/index.css">
+  <title>Главная страница</title>
   <style>
     /* Add your CSS styles here */
   </style>
@@ -15,17 +15,26 @@
   <!-- Add your HTML content here -->
 
   <header>
-    <div>
-      <h2>Кодируйте со страстью, программируйте с целью</h2>
-    </div>
+    
     <div id="timer">
-      <p>Time remaining until 25th: <span id="countdown"></span></p>
+      <p>До 28 осталось: <span id="countdown"></span></p>
     </div>
     <div id="clock">
       <p>Current time: <span id="time"></span></p>
     </div>
+
+    <form action="https://www.yandex.ru/search/">
+      <select name="lr">
+        <option value="213">Yandex</option>
+        <option value="0">Web</option>
+        <option value="187276">Images</option>
+      </select>
+      <input type="text" name="text">
+      <input type="submit" value="Search">
+    </form>
     <form>
       <select>
+        
         <option value="https://www.yandex.ru/search/?text=">Yandex</option>
         <option value="https://www.google.com/search?q=">Google</option>
         <option value="https://www.baidu.com/s?wd=">Baidu</option>
@@ -38,23 +47,25 @@
     </form>
   </header>
   <nav>
+    
     <ul>
       <li><a href="#section1">Мое цифровое пространство</a></li>
       <li><a href="#section2">Сайты</a></li>
       <li><a href="#section3">Хабы-Хабра</a></li>
       <li><a href="#section4">Рецепты</a></li>
-
+      
       <!-- Add more navigation links as needed -->
     </ul>
+    
   </nav>
-
-
+  
   <main>
     <section id="section1" hidden>
       <h2>Мое цифровое пространство</h2>
       <div>
         <ol>
-          <li><a href="https://disk.yandex.ru/client/disk" target="_blank" title="Яндекс диск">&#9885;Яндекс Диск</a></li>
+          <li><a href="https://disk.yandex.ru/client/disk" target="_blank" title="Яндекс диск">&#9885;Яндекс Диск</a>
+          </li>
           <li><a
               href="https://e.mail.ru/messages/inbox/?authid=kwc5pwdn.p7s&back=1%2C1&dwhsplit=s10273.b1ss12743s&from=login&x-login-auth=1&afterReload=1"
               target="_blank" title="Почта">&#9885;Почта</a></li>
@@ -68,7 +79,7 @@
           <li><a href="https://www.youtube.com/" target="_blank" title="Youtube">&#9885;Youtube</a>
           </li>
           <li><a href="https://www.amazonforum.com/s/topic/0TO4P000000t6euWAA/kindle-paperwhite"
-            target="_blank">&#9885;Amazon</a></li>
+              target="_blank">&#9885;Amazon</a></li>
         </ol>
 
       </div>
@@ -78,17 +89,16 @@
     <section id="section2" hidden>
       <h2>Сайты</h2>
       <div>
-      <ol>
-        <li><a href="https://www.yaplakal.com/forum/" target="_blank">&#9885;ЯПлакалъ</a></li>
-        <li><a href="https://rutracker.org/forum/index.php" target="_blank">&#9885;RuTracker</a></li>
-        <li><a href="https://habr.com/ru/all/" target="_blank">&#9885;Habr</a></li>
-        <li><a href="https://github.com/" target="_blank">&#9885;GitHub</a></li>
-        <li><a href="https://www.linux.org.ru/" target="_blank">&#9885;Linux.org</a></li>
-        <li><a href="https://4pda.to/forum/index.php?act=idx" target="_blank">&#9885;4pda</a></li>
-        <li><a href="https://pikabu.ru/community/books" target="_blank">&#9885;Пикабу</a></li>
-        <li><a href="https://www.reddit.com/subreddits/leaderboard/learning/"
-          target="_blank">&#9885;Reddit</a></li>
-      </ol>
+        <ol>
+          <li><a href="https://www.yaplakal.com/forum/" target="_blank">&#9885;ЯПлакалъ</a></li>
+          <li><a href="https://rutracker.org/forum/index.php" target="_blank">&#9885;RuTracker</a></li>
+          <li><a href="https://habr.com/ru/all/" target="_blank">&#9885;Habr</a></li>
+          <li><a href="https://github.com/" target="_blank">&#9885;GitHub</a></li>
+          <li><a href="https://www.linux.org.ru/" target="_blank">&#9885;Linux.org</a></li>
+          <li><a href="https://4pda.to/forum/index.php?act=idx" target="_blank">&#9885;4pda</a></li>
+          <li><a href="https://pikabu.ru/community/books" target="_blank">&#9885;Пикабу</a></li>
+          <li><a href="https://www.reddit.com/subreddits/leaderboard/learning/" target="_blank">&#9885;Reddit</a></li>
+        </ol>
       </div>
     </section>
 
@@ -97,28 +107,28 @@
       <div>
         <ol>
           <li><a href="https://habr.com/ru/hub/webdev/" target="_blank" class="men">&#9885;
-            Разработка
-            веб-сайтов </a></li>
+              Разработка
+              веб-сайтов </a></li>
           <li><a href="https://habr.com/ru/hub/html5/" target="_blank" class="men">&#9885; HTML</a></li>
           <li><a href="https://habr.com/ru/hub/css/" target="_blank" class="men">&#9885; CSS</a></li>
           <li><a href="https://habr.com/ru/hub/linux/" target="_blank" class="men">&#9885;
-            Настройка
-            Linux</a></li>
+              Настройка
+              Linux</a></li>
           <li><a href="https://habr.com/ru/hub/vs/" target="_blank" class="men">&#9885; Visual
-            Studio</a></li>
+              Studio</a></li>
           <li><a href="https://habr.com/ru/hub/javascript/" target="_blank" class="men">&#9885;
-            JavaScript</a></li>
+              JavaScript</a></li>
           <li><a href="https://habr.com/ru/hub/web_design/" target="_blank" class="men">&#9885;
-            Веб-дизайн</a></li>
+              Веб-дизайн</a></li>
           <li><a href="https://habr.com/ru/hub/cellular/" target="_blank" class="men">&#9885;
-            Сотовая
-            связь</a></li>
+              Сотовая
+              связь</a></li>
           <li><a href="https://habr.com/ru/hub/lifehacks/" target="_blank" class="men">&#9885;
-            Лайфхаки></a></li>
+              Лайфхаки></a></li>
           <li><a href="https://habr.com/ru/hub/lib/" target="_blank" class="men">&#9885;
-            Профессиональная
-            литература</a></li>
-          <li><a href="" target="_blank" class="men">&#9885; </a></li>
+              Профессиональная
+              литература</a></li>
+          <li><a href="habr.html" target="_blank" class="men">&#9885; Статьи на Хабре</a></li>
         </ol>
       </div>
     </section>
@@ -150,59 +160,15 @@
   </footer>
 </body>
 
-<script>
-  function scrollToSection(event) {
-    event.preventDefault();
-    let sectionId = event.target.getAttribute("href");
-    let section = document.querySelector(sectionId);
-    section.scrollIntoView({ behavior: "smooth" });
-  }
-</script>
+<script src="JS/index.js"></script>
 
 <script>
-  function showSection(event) {
-    event.preventDefault();
-    let sectionId = event.target.getAttribute("href");
-    let section = document.querySelector(sectionId);
-    if (section.style.display === "block") {
-      section.style.display = "none";
-    } else {
-      section.style.display = "block";
-    }
-  }
-
-  let links = document.querySelectorAll("nav a");
-  for (let i = 0; i < links.length; i++) {
-    links[i].addEventListener("click", showSection);
-  }
+  
 
 </script>
 
 <script>
-  // Get the current date
-  const now = new Date();
-
-  // Get the date of the 25th of the current month
-  const targetDate = new Date(now.getFullYear(), now.getMonth(), 25);
-
-  // Calculate the difference between the target date and the current date
-  const diff = targetDate - now;
-
-  // Convert the difference to days
-  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-
-  // Update the countdown timer on the page
-  document.getElementById("countdown").innerHTML = days + " days";
-
-  // Function to display the current time
-  function displayTime() {
-    const date = new Date();
-    const time = date.toLocaleTimeString();
-    document.getElementById("time").innerHTML = time;
-  }
-
-  // Call the displayTime function every 1 second
-  setInterval(displayTime, 1000);
+ 
 </script>
 
 </html>

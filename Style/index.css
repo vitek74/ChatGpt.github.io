@@ -80,6 +80,10 @@ h2 {
     color: #b22222;
 }
 
+.todo {
+  color: #999;
+}
+
 /* Вэб Сайты */
 
 ol {
@@ -100,8 +104,6 @@ li a {
 
 
 /* рецепты */
-
-
 
 .recipe {
   width: 50%;
@@ -142,6 +144,10 @@ ol {
   list-style: decimal;
   padding-left: 2em;
 }
+
+
+ /* habr.html */
+ 
 
 
 /* Кнопка Домой */
