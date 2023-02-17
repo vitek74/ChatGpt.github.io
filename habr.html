@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My HTML page</title>
+  <style>
+    /* Add your CSS styles here */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    a {
+      color: #0072c6;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: bold;
+      margin: 0;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+    .section {
+      padding: 30px;
+      background-color: #fff;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 4px rgba(0,0,0,.1);
+    }
+  </style>
+</head>
+<body>
+  <header>
+<div>
+    <a href="#" class="home-button">Home</a></div>
+
+   <div> <button id="upBtn" class="hidden">Up</button></div>
+
+
+    <nav>
+      <ul>
+        <li><a href="https://habr.com/ru/hub/webdev/" target="_blank" class="men">&#9885;
+            Разработка
+            веб-сайтов </a></li>
+          <li><a href="https://habr.com/ru/hub/html5/" target="_blank" class="men">&#9885; HTML</a></li>
+          <li><a href="https://habr.com/ru/hub/css/" target="_blank" class="men">&#9885; CSS</a></li>
+          <li><a href="https://habr.com/ru/hub/linux/" target="_blank" class="men">&#9885;
+            Настройка
+            Linux</a></li>
+          <li><a href="https://habr.com/ru/hub/vs/" target="_blank" class="men">&#9885; Visual
+            Studio</a></li>
+          <li><a href="https://habr.com/ru/hub/javascript/" target="_blank" class="men">&#9885;
+            JavaScript</a></li>
+          <li><a href="https://habr.com/ru/hub/web_design/" target="_blank" class="men">&#9885;
+            Веб-дизайн</a></li>
+          <li><a href="https://habr.com/ru/hub/cellular/" target="_blank" class="men">&#9885;
+            Сотовая
+            связь</a></li>
+          <li><a href="https://habr.com/ru/hub/lifehacks/" target="_blank" class="men">&#9885;
+            Лайфхаки></a></li>
+          <li><a href="https://habr.com/ru/hub/lib/" target="_blank" class="men">&#9885;
+            Профессиональная
+            литература</a></li>
+          <li><a href="https://habr.com/ru/hub/DIY/" target="_blank" class="men">&#9885; DIY
+            или Сделай
+            сам</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <div class="container">
+      <div class="section">
+        <h2>Article 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus auctor mi ac ligula pharetra, vel venenatis quam consectetur. Duis vel sodales ante. Nulla facilisi. Donec et magna at mi faucibus blandit. Nullam vel ex nisi. Nullam aliquet magna sit amet odio ullamcorper euismod. Praesent at metus sit amet purus egestas scelerisque.</p>
+        <p><a href="#">Read more</a></p>
+      </div>
+      
+      <div class="section">
+        <h2>Article 2</h2>
+        <p>Donec ac nunc lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer volutpat varius lacus, in bibendum orci sollicitudin nec. Suspendisse euismod dapibus enim, eu cursus diam vestibulum vel. Duis auctor vestibulum libero, non mollis purus commodo non. Curabitur blandit ante vel ligula malesuada iaculis. </p>
+        <p><a href="#">Read more</a></p>
+      </div>
+      
+      <div class="section">
+        <h2>Article 3</h2>
+        <p>Fusce pharetra ex nec augue facilisis, nec congue sapien volutpat. Etiam auctor neque non velit vehicula, sit amet interdum sapien sollicitudin. Etiam finibus nisi ut odio tempor, ut iaculis mi tristique. Sed finibus dignissim leo, ut euismod lectus faucibus ut. </p>
+        <p><a href="#">Read more</a></p>
+      </div>
+    </div>
+  </main>
+  
+  <footer>
+    <p>&copy; 2023</p>
+    </footer>
+    <script>
+        /* Кнопка наверх  */
+        $(document).ready(function() {
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+      $('#upBtn').removeClass('hidden');
+    } else {
+      $('#upBtn').addClass('hidden');
+    }
+  });
+
+  $('#upBtn').click(function() {
+    $('html, body').animate({scrollTop: 0}, 500);
+    return false;
+  });
+});
+
+    </script>
+    </body>
+    </html>
