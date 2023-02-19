@@ -26,7 +26,7 @@ function scrollToSection(event) {
 
 
 
-   // Get the current date
+   // часы
    const now = new Date();
 
    // Get the date of the 25th of the current month
@@ -39,7 +39,7 @@ function scrollToSection(event) {
    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
  
    // Update the countdown timer on the page
-   document.getElementById("countdown").innerHTML = days + " days";
+   document.getElementById("countdown").innerHTML = days + " дней";
  
    // Function to display the current time
    function displayTime() {
