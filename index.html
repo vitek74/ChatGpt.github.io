@@ -12,53 +12,45 @@
 </head>
 
 <body>
-  <!-- Add your HTML content here -->
+  
 
   <header>
-    
-    <div id="timer">
-      <p>До 28 осталось: <span id="countdown"></span></p>
+    <!--Поисковая строка -->
+    <div class="Yandex">
+      <form action="https://www.yandex.ru/search/">
+        <input type="submit" value="Яндекс">
+      </form>
     </div>
-    <div id="clock">
-      <p>Current time: <span id="time"></span></p>
+    <div class="Google">
+      <form action="https://www.google.com/search?q=">
+        <input type="submit" value="Google">
+      </form>
     </div>
 
-    <form action="https://www.yandex.ru/search/">
-      <select name="lr">
-        <option value="213">Yandex</option>
-        <option value="0">Web</option>
-        <option value="187276">Images</option>
-      </select>
-      <input type="text" name="text">
-      <input type="submit" value="Search">
-    </form>
-    <form>
-      <select>
-        
-        <option value="https://www.yandex.ru/search/?text=">Yandex</option>
-        <option value="https://www.google.com/search?q=">Google</option>
-        <option value="https://www.baidu.com/s?wd=">Baidu</option>
-        <option value="https://www.dogpile.com/search/web?q=">Dogpile</option>
-        <option value="https://duckduckgo.com/?q=">DuckDuckGo</option>
-        <option value="https://www.yacy.net/search?query=">YaCy</option>
-      </select>
-      <input type="text" name="searchTerm">
-      <input type="submit" value="Search">
-    </form>
+    <div>
+      <div id="timer">
+        <p>До 28 осталось: <span id="countdown"></span></p>
+      </div>
+      <div id="clock">
+        <p>Московское время: <span id="time"></span></p>
+      </div>
+    </div>
   </header>
+
+
   <nav>
-    
+
     <ul>
       <li><a href="#section1">Мое цифровое пространство</a></li>
       <li><a href="#section2">Сайты</a></li>
       <li><a href="#section3">Хабы-Хабра</a></li>
       <li><a href="#section4">Рецепты</a></li>
-      
+
       <!-- Add more navigation links as needed -->
     </ul>
-    
+
   </nav>
-  
+
   <main>
     <section id="section1" hidden>
       <h2>Мое цифровое пространство</h2>
@@ -163,12 +155,12 @@
 <script src="JS/index.js"></script>
 
 <script>
-  
+
 
 </script>
 
 <script>
- 
+
 </script>
 
 </html>
