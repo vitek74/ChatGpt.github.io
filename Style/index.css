@@ -38,16 +38,16 @@ body {
 
 
   nav {
-    position: fixed;
+    
     width: 100%;
     font-size: 30px;
     z-index: 999;
-    background-color: #ccc;
+    background-color: #999;
     padding: 0.5em;
     text-align: center;
   }
   nav ul {
-    display: inline-block;
+    
     list-style: none;
     margin: 0;
     padding: 0;
