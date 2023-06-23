@@ -27,26 +27,25 @@ function scrollToSection(event) {
 
 
    // часы
-   const now = new Date();
-
-   // Get the date of the 25th of the current month
-   const targetDate = new Date(now.getFullYear(), now.getMonth(), 27);
- 
-   // Calculate the difference between the target date and the current date
-   const diff = targetDate - now;
- 
-   // Convert the difference to days
-   const days = Math.floor(diff / (1000 * 60 * 60 * 24));
- 
-   // Update the countdown timer on the page
-   document.getElementById("countdown").innerHTML = days + " дней";
- 
-   // Function to display the current time
-   function displayTime() {
-     const date = new Date();
-     const time = date.toLocaleTimeString();
-     document.getElementById("time").innerHTML = time;
-   }
+   function updateTime() {
+    var now = new Date();
+    var hours = now.getHours();
+    var minutes = now.getMinutes();
+    var seconds = now.getSeconds();
+  
+    // Format the time as HH:MM:SS
+    var timeString = hours.toString().padStart(2, '0') + ':' + minutes.toString().padStart(2, '0') + ':' + seconds.toString().padStart(2, '0');
+  
+    // Update the element with the current time
+    document.getElementById('current-time').textContent = timeString;
+  }
+  
+  // Call the updateTime function initially to set the time immediately
+  updateTime();
+  
+  // Update the time every second (1000 milliseconds)
+  setInterval(updateTime, 1000);
+  
  
    // Call the displayTime function every 1 second
    setInterval(displayTime, 1000);

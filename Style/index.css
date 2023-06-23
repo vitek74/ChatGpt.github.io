@@ -129,7 +129,7 @@ h2 {
   background-color: #4CAF50;
   border: none;
   color: white;
- width: 200px;
+ width: 300px;
   font-weight: 700;
   text-align: center;
   text-decoration: none;
@@ -144,6 +144,7 @@ h2 {
 .button-style:hover {
   background-color: #3e8e41;
 }
+
 
 
 
