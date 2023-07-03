@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Простой блокнот</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    #notebook {
+      margin-top: 20px;
+    }
+
+    .entry {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+      background-color: #f9f9f9;
+    }
+
+    .entry h3 {
+      margin-top: 0;
+    }
+
+    .entry p {
+      margin-bottom: 0;
+    }
+
+    .delete-button {
+      background-color: #dc3545;
+      color: #fff;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Простой блокнот</h1>
+
+  <div id="notebook">
+    <!-- Здесь будет отображаться содержимое блокнота -->
+  </div>
+
+  <button onclick="addEntry()">Добавить запись</button>
+
+  <script>
+    // Создаем пустой массив для записей
+    let entries = [];
+
+    // Функция для добавления новой записи
+    function addEntry() {
+      let title = prompt("Введите заголовок записи:");
+      let content = prompt("Введите содержание записи:");
+
+      let entry = {
+        title: title,
+        content: content
+      };
+
+      entries.push(entry);
+
+      displayNotebook();
+    }
+
+    // Функция для удаления записи
+    function deleteEntry(index) {
+      entries.splice(index, 1);
+
+      displayNotebook();
+    }
+
+    // Функция для отображения блокнота на странице
+    function displayNotebook() {
+      let notebookElement = document.getElementById("notebook");
+      notebookElement.innerHTML = "";
+
+      for (let i = 0; i < entries.length; i++) {
+        let entryElement = document.createElement("div");
+        entryElement.className = "entry";
+        entryElement.innerHTML = "<h3>Заголовок: " + entries[i].title + "</h3>" +
+          "<p>Содержание: " + entries[i].content + "</p>";
+
+        let deleteButton = document.createElement("button");
+        deleteButton.className = "delete-button";
+        deleteButton.textContent = "Удалить";
+        deleteButton.addEventListener("click", function() {
+          deleteEntry(i);
+        });
+
+        entryElement.appendChild(deleteButton);
+
+        notebookElement.appendChild(entryElement);
+      }
+    }
+
+    // Вызываем функцию для отображения блокнота при загрузке страницы
+    displayNotebook();
+  </script>
+</body>
+</html>
