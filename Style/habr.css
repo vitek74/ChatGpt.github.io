@@ -33,17 +33,20 @@ body {
 
   .home-button {
     text-decoration: none;
+    font-size: 27px;
   }
 
   .men {
     text-decoration: none;
+    font-size: 27px;
   }
-
+  
 
 
   /* javascript.html */
 
 .title {
   text-align: center;
+  font-size: 30px;
 }
 
