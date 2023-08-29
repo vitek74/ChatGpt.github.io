@@ -1,85 +1,96 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    
-  }
-  header {
-    background-color: #333;
-    font-size: 21px;
-    color: #fff;
-    padding: 1em;
-    text-align: center;
-  }
-  header h1 {
-    margin: 0;
-  }
-  form {
-    width: 500px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  select {
-    font-size: 20px;
-    padding: 5px;
-    margin: 10px;
-  }
-  input[type="text"] {
-    font-size: 20px;
-    padding: 5px;
-    margin: 10px;
-    width: 60%;
-  }
-  input[type="submit"] {
-    font-size: 20px;
-    padding: 5px;
-    margin: 10px;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 
-
-  nav {
-    
-    width: 100%;
-    font-size: 30px;
-    z-index: 999;
-    background-color: #999;
-    padding: 0.5em;
-    text-align: center;
-  }
-  nav ul {
-    
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  nav li {
-    display: inline-block;
-    margin: 0 1em;
-  }
-  nav a {
-    color: #333;
-    text-decoration: none;
-  }
-  section {
-display: none;
 }
 
-  section {
-    padding: 1em;
+header {
+  background-color: #333;
+  font-size: 21px;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+form {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+select {
+  font-size: 20px;
+  padding: 5px;
+  margin: 10px;
+}
+
+input[type="text"] {
+  font-size: 20px;
+  padding: 5px;
+  margin: 10px;
+  width: 60%;
+}
+
+input[type="submit"] {
+  font-size: 20px;
+  padding: 5px;
+  margin: 10px;
+}
+
+
+nav {
+
+  width: 100%;
+  font-size: 30px;
+  z-index: 999;
+  background-color: #999;
+  padding: 0.5em;
+  text-align: center;
+}
+
+nav ul {
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 1em;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+}
+
+section {
+  display: none;
+}
+
+section {
+  padding: 1em;
+}
+
+/* Add media queries for responsiveness */
+@media only screen and (max-width: 767px) {
+  nav {
+    display: none;
   }
-  /* Add media queries for responsiveness */
-  @media only screen and (max-width: 767px) {
-    nav {
-      display: none;
-    }
-  }
+}
 
 
 
-  
+
 h2 {
-    text-align: center;
-    color: #b22222;
+  text-align: center;
+  color: #b22222;
 }
 
 .todo {
@@ -88,7 +99,7 @@ h2 {
 
 .Yandex {
   float: left;
-  
+
 }
 
 .Yandex form input[type="submit"] {
@@ -129,7 +140,7 @@ h2 {
   background-color: #4CAF50;
   border: none;
   color: white;
- width: 300px;
+  width: 300px;
   font-weight: 700;
   text-align: center;
   text-decoration: none;
@@ -210,8 +221,8 @@ ol {
 }
 
 
- /* habr.html */
- 
+/* habr.html */
+
 
 
 /* Кнопка Домой */
@@ -253,4 +264,3 @@ ol {
 #upBtn.hidden {
   display: none;
 }
-
