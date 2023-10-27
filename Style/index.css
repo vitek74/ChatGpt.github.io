@@ -17,12 +17,23 @@ header h1 {
   margin: 0;
 }
 
+.it {
+  display: inline-flex;
+}
 
 .container {
   float: left;
   text-align: center;
 }
 
+.container_center {
+  text-align: center;
+}
+
+.container_right {
+  float: right;
+  text-align: center;
+}
 
 .button-form {
   width: 500px;
