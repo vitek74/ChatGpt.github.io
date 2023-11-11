@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  header {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  background-color: #333;
+  font-size: 21px;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+  }
+  
+  .main-block {
+    width: 33.33%; /* Для создания 3 блоков по горизонтали */
+    height: auto;
+    float: left; /* Альтернативный способ создания горизонтального размещения */
+    background-color: cadetblue;
+
+  }
+  
