@@ -3,7 +3,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
   }
-  
+  /* */
   header {
     display: flex;
     flex-direction: column;
@@ -16,10 +16,23 @@ body {
   }
   
   .main-block {
+    display: flex;
+    flex-direction: column;
+    width: auto;
     width: 33.33%; /* Для создания 3 блоков по горизонтали */
     height: auto;
     float: left; /* Альтернативный способ создания горизонтального размещения */
     background-color: cadetblue;
 
+  }
+
+  /* Кнопка поисковиков */
+  .Yandex {
+    float: left;
+  }
+
+/* Кнопка поисковиков */
+  .Google {
+    float: right;
   }
   
